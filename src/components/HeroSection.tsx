@@ -24,7 +24,7 @@ export function HeroSection() {
 </h2>
         <FadeIn delay={0.25} y={40} className="w-full mt-4 flex justify-center text-center px-4">
           <p className="text-[#D7E2EA] font-medium text-[clamp(0.8rem,2vw,1.5rem)] tracking-widest uppercase opacity-80">
-            Frontend Developer | UI Animator | Tech Enthusiast
+            Frontend Developer | UI Animator | React Developer
           </p>
         </FadeIn>
       </div>
