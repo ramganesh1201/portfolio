@@ -16,7 +16,7 @@ export function HeroSection() {
       <div className="flex-1 flex flex-col justify-center overflow-hidden w-full">
         <FadeIn delay={0.15} y={40} className="w-full">
           <h1 className="hero-heading font-black uppercase tracking-tight leading-none whitespace-nowrap w-full text-[14vw] sm:text-[15vw] md:text-[16vw] lg:text-[17.5vw] mt-6 sm:mt-4 md:-mt-5 text-center">
-            Hi, i&apos;m vemula ram ganesh
+            Hi, i&apos;m ram
           </h1>
         </FadeIn>
         <h2 className="sr-only">
