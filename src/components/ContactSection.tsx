@@ -1,6 +1,63 @@
-import { FadeIn } from './FadeIn';
+import { useState } from "react";
+import emailjs from "@emailjs/browser";
+import { supabase } from "../lib/supabase";
+import { FadeIn } from "./FadeIn";
 
 export function ContactSection() {
+  const [loading, setLoading] = useState(false);
+  const handleSubmit = async (
+  e: React.FormEvent<HTMLFormElement>
+) => {
+  e.preventDefault();
+
+  setLoading(true);
+
+  const formData = new FormData(e.currentTarget);
+
+  const name = formData.get("name") as string;
+  const email = formData.get("email") as string;
+  const details = formData.get("details") as string;
+
+  // Save to Supabase
+  const { error } = await supabase
+    .from("contacts")
+    .insert([
+      {
+        name,
+        email,
+        details,
+      },
+    ]);
+
+  if (error) {
+    setLoading(false);
+    alert("Failed to send message.");
+    console.error(error);
+    return;
+  }
+
+  // Send email notification
+  try {
+    await emailjs.send(
+  import.meta.env.VITE_EMAILJS_SERVICE_ID,
+  import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
+  {
+    name,
+    email,
+    details,
+  },
+  import.meta.env.VITE_EMAILJS_PUBLIC_KEY
+);
+
+    alert("Message sent successfully!");
+    e.currentTarget.reset();
+  } catch (err) {
+    console.error(err);
+    alert("Saved in database but email notification failed.");
+  }
+
+  setLoading(false);
+};
   return (
     <section
       id="contact"
@@ -83,10 +140,7 @@ export function ContactSection() {
             <div>
               <form
                 className="space-y-5"
-                onSubmit={(e) => {
-                  e.preventDefault();
-                  // Keep it minimal/non-breaking: no external integrations assumed.
-                }}
+                onSubmit={handleSubmit}
               >
                 <div>
                   <label htmlFor="contact-name" className="block text-[#D7E2EA] uppercase tracking-widest text-xs font-semibold">
@@ -143,7 +197,7 @@ export function ContactSection() {
                     outlineOffset: '-3px'
                   }}
                 >
-                  Send Message
+                  {loading ? "Sending..." : "Send Message"}
                   <span aria-hidden className="ml-3 text-[#BE4C00] transition-transform duration-300 group-hover:translate-x-1">
                     →
                   </span>
