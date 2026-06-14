@@ -53,7 +53,7 @@ export function ContactSection() {
     e.currentTarget.reset();
   } catch (err) {
     console.error(err);
-    alert("Saved in database but email notification failed.");
+    alert("We will reach out to you soon to discuss your idea further.");
   }
 
   setLoading(false);
