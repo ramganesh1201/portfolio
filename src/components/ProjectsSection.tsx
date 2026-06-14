@@ -39,6 +39,11 @@ const projects = [
     label: "Client",
     name: "nutrivigil advisor",
     url: "https://elaborate-cupcake-a346d5.netlify.app/",
+    images: {
+      col1_1: smallImage111,
+      col1_2: smallImage222,
+      col2: homeImage1
+    }
   }
 ];
 
