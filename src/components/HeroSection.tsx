@@ -32,7 +32,7 @@ export function HeroSection() {
       <div className="flex justify-between items-end pb-7 sm:pb-8 md:pb-10 px-6 md:px-10 relative z-20 w-full">
         <FadeIn delay={0.35} y={20} className="max-w-[180px] sm:max-w-[260px] md:max-w-[320px]">
           <p className="text-[#D7E2EA] font-light uppercase tracking-wide leading-snug text-[clamp(0.75rem,1.4vw,1.5rem)]">
-            I am Vemula Ram Ganesh, a Frontend Developer and B.Tech Computer Science student passionate about building modern web applications using React, TypeScript, JavaScript and Tailwind CSS.
+            I am Vemula Ram Ganesh,a Frontend Developer and B.Tech Computer Science student passionate about building modern web applications using React, TypeScript, JavaScript and Tailwind CSS.
           </p>
         </FadeIn>
         <FadeIn delay={0.5} y={20}>

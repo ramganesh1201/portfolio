@@ -94,7 +94,7 @@ export function ContactSection() {
             <div className="space-y-10">
               <div>
                 <div className="inline-flex items-center rounded-full border border-[rgba(215,226,234,0.18)] bg-[rgba(12,12,12,0.6)] px-4 py-2">
-                  <span className="w-2 h-2 rounded-full bg-[#BE4C00] shadow-[0_0_20px_rgba(190,76,0,0.55)] mr-3" />
+                  <span className="w-2 h-2 rounded-full bg-[#0dea7c] shadow-[0_0_20px_rgba(190,76,0,0.55)] mr-3" />
                   <span className="text-[#D7E2EA] uppercase tracking-widest text-[0.75rem] sm:text-xs font-medium">
                     Available for freelance
                   </span>
@@ -225,7 +225,7 @@ export function ContactSection() {
 
               <div className="flex flex-wrap gap-x-8 gap-y-4 items-center">
                 <a
-                  href="https://github.com/dragon143-crypto"
+                  href="https://github.com/ramganesh1201"
                   className="group relative text-white/90 hover:text-white transition-colors font-medium"
                 >
                   <span className="block">GitHub</span>
@@ -235,7 +235,7 @@ export function ContactSection() {
                   </span>
                 </a>
                 <a
-                  href="https://www.linkedin.com/in/ram-ganesh-vemula-b13b512b9/"
+                  href="https://www.linkedin.com/in/vemula-ram-ganesh-b13b512b9?utm_source=share_via&utm_content=profile&utm_medium=member_android"
                   className="group relative text-white/90 hover:text-white transition-colors font-medium"
                 >
                   <span className="block">LinkedIn</span>

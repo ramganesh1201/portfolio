@@ -9,21 +9,11 @@ const services = [
   },
   {
     num: "2025",
-    title: "First Interactive UI",
-    desc: "Created a dynamic portfolio homepage with custom cursor, scroll animations, and interactive elements."
-  },
-  {
-    num: "2024",
     title: "Frontend Development Journey",
     desc: "Focused on modern UI systems, responsive architecture, motion design, and performance optimization."
   },
   {
-    num: "2023",
-    title: "Advanced UI Projects",
-    desc: "Built interactive web interfaces including portfolio systems and advanced e-commerce UI prototypes."
-  },
-  {
-    num: "2022",
+    num: "2024",
     title: "Started B.Tech",
     desc: "Began academic foundation in Computer Science while exploring frontend development deeply."
   }
