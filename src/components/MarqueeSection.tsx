@@ -66,7 +66,7 @@ export function MarqueeSection() {
           style={{ transform: `translateX(${startOffset + (offset - 200)}px)` }}
         >
           {row1Tripled.map((src, i) => (
-            <img key={i} src={src} alt="Marquee item" loading="lazy" className="w-[420px] h-[270px] rounded-2xl object-cover shrink-0" />
+            <img key={i} src={src} alt="Marquee item" loading="lazy" className="w-[280px] h-[180px] sm:w-[420px] sm:h-[270px] rounded-2xl object-cover shrink-0" />
           ))}
         </div>
         <div 
@@ -74,7 +74,7 @@ export function MarqueeSection() {
           style={{ transform: `translateX(${startOffset - (offset - 200)}px)` }}
         >
           {row2Tripled.map((src, i) => (
-            <img key={i} src={src} alt="Marquee item" loading="lazy" className="w-[420px] h-[270px] rounded-2xl object-cover shrink-0" />
+            <img key={i} src={src} alt="Marquee item" loading="lazy" className="w-[280px] h-[180px] sm:w-[420px] sm:h-[270px] rounded-2xl object-cover shrink-0" />
           ))}
         </div>
       </div>

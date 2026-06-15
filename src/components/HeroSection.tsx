@@ -7,7 +7,7 @@ import { CursorSpotlight } from './backgrounds/CursorSpotlight';
 
 export function HeroSection() {
   return (
-    <section className="h-screen flex flex-col overflow-x-clip relative w-full bg-[#0C0C0C]">
+    <section className="min-h-[100dvh] h-[100dvh] flex flex-col overflow-x-clip relative w-full bg-[#0C0C0C]">
       {/* Premium Background System */}
       <MeshGradientBackground />
       <ParticleBackground />
@@ -25,11 +25,11 @@ export function HeroSection() {
       />
 
       <FadeIn delay={0} y={-20} as="nav" className="flex justify-between items-center text-[#D7E2EA] font-medium uppercase tracking-wider text-[11px] sm:text-xs md:text-sm lg:text-base px-6 md:px-10 pt-6 md:pt-8 relative z-20 w-full gap-2 sm:gap-4 md:gap-6 overflow-x-auto whitespace-nowrap hide-scrollbar">
-        <a href="#profile" className="hover:opacity-70 transition-opacity duration-200">Profile</a>
-        <a href="#about" className="hover:opacity-70 transition-opacity duration-200">About</a>
-        <a href="#experience" className="hover:opacity-70 transition-opacity duration-200">Experience</a>
-        <a href="#projects" className="hover:opacity-70 transition-opacity duration-200">Projects</a>
-        <a href="#contact" className="hover:opacity-70 transition-opacity duration-200">Contact</a>
+        <a href="#profile" className="hover:opacity-70 transition-opacity duration-200 py-3 px-2 -mx-2">Profile</a>
+        <a href="#about" className="hover:opacity-70 transition-opacity duration-200 py-3 px-2 -mx-2">About</a>
+        <a href="#experience" className="hover:opacity-70 transition-opacity duration-200 py-3 px-2 -mx-2">Experience</a>
+        <a href="#projects" className="hover:opacity-70 transition-opacity duration-200 py-3 px-2 -mx-2">Projects</a>
+        <a href="#contact" className="hover:opacity-70 transition-opacity duration-200 py-3 px-2 -mx-2">Contact</a>
       </FadeIn>
 
       <div className="flex-1 flex flex-col justify-center overflow-hidden w-full relative z-20">
@@ -42,7 +42,7 @@ export function HeroSection() {
   Vemula Ram Ganesh Frontend Developer Portfolio
 </h2>
         <FadeIn delay={0.25} y={40} className="w-full mt-4 flex justify-center text-center px-4">
-          <p className="text-[#D7E2EA] font-medium text-[clamp(0.8rem,2vw,1.5rem)] tracking-widest uppercase opacity-80">
+          <p className="text-[#D7E2EA] font-medium text-[clamp(1rem,2vw,1.5rem)] tracking-widest uppercase opacity-80">
             Frontend Developer | UI Animator | React Developer
           </p>
         </FadeIn>
@@ -50,7 +50,7 @@ export function HeroSection() {
 
       <div className="flex justify-between items-end pb-7 sm:pb-8 md:pb-10 px-6 md:px-10 relative z-20 w-full">
         <FadeIn delay={0.35} y={20} className="max-w-[180px] sm:max-w-[260px] md:max-w-[320px]">
-          <p className="text-[#D7E2EA] font-light uppercase tracking-wide leading-snug text-[clamp(0.75rem,1.4vw,1.5rem)]">
+          <p className="text-[#D7E2EA] font-light uppercase tracking-wide leading-snug text-[clamp(0.9rem,1.4vw,1.5rem)]">
             I am Vemula Ram Ganesh,a Frontend Developer and B.Tech Computer Science student passionate about building modern web applications using React, TypeScript, JavaScript and Tailwind CSS.
           </p>
         </FadeIn>

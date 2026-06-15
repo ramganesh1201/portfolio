@@ -152,7 +152,7 @@ export function ContactSection() {
                     type="text"
                     autoComplete="name"
                     required
-                    className="mt-3 w-full rounded-xl bg-[#0C0C0C] border border-[rgba(215,226,234,0.16)] px-4 py-3 text-white placeholder:text-[rgba(215,226,234,0.45)] focus:outline-none focus:ring-2 focus:ring-[#BE4C00] focus:border-transparent transition"
+                    className="mt-3 w-full rounded-xl bg-[#0C0C0C] border border-[rgba(215,226,234,0.16)] px-4 py-3 min-h-[48px] text-base sm:text-sm text-white placeholder:text-[rgba(215,226,234,0.45)] focus:outline-none focus:ring-2 focus:ring-[#BE4C00] focus:border-transparent transition"
                     placeholder=" name"
                   />
                 </div>
@@ -167,7 +167,7 @@ export function ContactSection() {
                     type="email"
                     autoComplete="email"
                     required
-                    className="mt-3 w-full rounded-xl bg-[#0C0C0C] border border-[rgba(215,226,234,0.16)] px-4 py-3 text-white placeholder:text-[rgba(215,226,234,0.45)] focus:outline-none focus:ring-2 focus:ring-[#BE4C00] focus:border-transparent transition"
+                    className="mt-3 w-full rounded-xl bg-[#0C0C0C] border border-[rgba(215,226,234,0.16)] px-4 py-3 min-h-[48px] text-base sm:text-sm text-white placeholder:text-[rgba(215,226,234,0.45)] focus:outline-none focus:ring-2 focus:ring-[#BE4C00] focus:border-transparent transition"
                     placeholder="sample@domain.com"
                   />
                 </div>
@@ -181,7 +181,7 @@ export function ContactSection() {
                     name="details"
                     required
                     rows={6}
-                    className="mt-3 w-full resize-none rounded-xl bg-[#0C0C0C] border border-[rgba(215,226,234,0.16)] px-4 py-3 text-white placeholder:text-[rgba(215,226,234,0.45)] focus:outline-none focus:ring-2 focus:ring-[#BE4C00] focus:border-transparent transition"
+                    className="mt-3 w-full resize-none rounded-xl bg-[#0C0C0C] border border-[rgba(215,226,234,0.16)] px-4 py-3 min-h-[48px] text-base sm:text-sm text-white placeholder:text-[rgba(215,226,234,0.45)] focus:outline-none focus:ring-2 focus:ring-[#BE4C00] focus:border-transparent transition"
                     placeholder="Tell me what you&apos;re building..."
                   />
                 </div>

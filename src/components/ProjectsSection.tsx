@@ -58,10 +58,10 @@ const ProjectCard = ({ project, index, progress, targetScale }: { project: any, 
   const scale = useTransform(progress, [index * 0.33, 1], [1, targetScale]);
 
   return (
-    <div ref={containerRef} className="h-[85vh] flex items-center justify-center sticky top-[6rem] md:top-[8rem]" style={{ paddingTop: `${index * 28}px` }}>
+    <div ref={containerRef} className="h-[85dvh] flex items-center justify-center sticky top-[6rem] md:top-[8rem]" style={{ paddingTop: `${index * 28}px` }}>
       <motion.div
         style={{ scale, transformOrigin: 'top' }}
-        className="w-full max-w-7xl mx-auto rounded-[40px] sm:rounded-[50px] md:rounded-[60px] border-2 border-[#D7E2EA] bg-[#0C0C0C] p-4 sm:p-6 md:p-8 flex flex-col gap-6 sm:gap-8 shadow-2xl h-[calc(85vh-2rem)] overflow-hidden"
+        className="w-full max-w-7xl mx-auto rounded-[40px] sm:rounded-[50px] md:rounded-[60px] border-2 border-[#D7E2EA] bg-[#0C0C0C] p-4 sm:p-6 md:p-8 flex flex-col gap-6 sm:gap-8 shadow-2xl h-[calc(85dvh-2rem)] overflow-hidden"
       >
         <div className="flex flex-col md:flex-row md:items-center justify-between gap-4 shrink-0">
           <div className="flex items-center gap-4 sm:gap-6 md:gap-10">
@@ -101,7 +101,7 @@ export function ProjectsSection() {
   });
 
   return (
-    <section id="projects" className="bg-[#0C0C0C] rounded-t-[40px] sm:rounded-t-[50px] md:rounded-t-[60px] -mt-10 sm:-mt-12 md:-mt-14 relative z-20 w-full pt-20 pb-[15vh]">
+    <section id="projects" className="bg-[#0C0C0C] rounded-t-[40px] sm:rounded-t-[50px] md:rounded-t-[60px] -mt-10 sm:-mt-12 md:-mt-14 relative z-20 w-full pt-20 pb-[15dvh]">
       <div className="px-5 sm:px-8 md:px-10 mb-10 md:mb-16">
         <h2 className="hero-heading font-black uppercase text-center text-[clamp(3rem,12vw,160px)] leading-none tracking-tight">
           Project

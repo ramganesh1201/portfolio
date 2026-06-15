@@ -39,7 +39,7 @@ export function AboutSection() {
           </FadeIn>
           <AnimatedText 
             text="I'm a 2nd Year B.Tech student focused on frontend architecture, motion design, and interactive UI systems. I combine clean engineering with refined visual execution."
-            className="text-[#D7E2EA] font-medium text-center leading-relaxed max-w-[660px] text-[clamp(1rem,2vw,1.35rem)]"
+            className="text-[#D7E2EA] font-medium text-center leading-relaxed max-w-[660px] text-[clamp(1.125rem,2vw,1.35rem)]"
           />
           
           <FadeIn delay={0.2} y={20} className="w-full mt-12 md:mt-16 border-t border-[rgba(215,226,234,0.1)] pt-10">
