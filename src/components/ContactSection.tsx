@@ -113,7 +113,7 @@ export function ContactSection() {
                     href="mailto:your@email.com"
                     className="mt-2 inline-flex items-center gap-2 text-[#D7E2EA] hover:text-white transition-colors font-medium"
                   >
-                    sample@email.com
+                    ramvemula334@email.com
                     <span aria-hidden className="text-[#BE4C00]">↗</span>
                   </a>
                 </div>

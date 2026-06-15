@@ -1,19 +1,38 @@
 
 import { FadeIn } from './FadeIn';
 import { ContactButton } from './ContactButton';
-
+import { MeshGradientBackground } from './backgrounds/MeshGradientBackground';
+import { ParticleBackground } from './backgrounds/ParticleBackground';
+import { CursorSpotlight } from './backgrounds/CursorSpotlight';
 
 export function HeroSection() {
   return (
-    <section className="h-screen flex flex-col overflow-x-clip relative w-full">
-      <FadeIn delay={0} y={-20} as="nav" className="flex justify-between items-center text-[#D7E2EA] font-medium uppercase tracking-wider text-sm md:text-lg lg:text-[1.4rem] px-6 md:px-10 pt-6 md:pt-8 relative z-20 w-full">
+    <section className="h-screen flex flex-col overflow-x-clip relative w-full bg-[#0C0C0C]">
+      {/* Premium Background System */}
+      <MeshGradientBackground />
+      <ParticleBackground />
+      <CursorSpotlight />
+
+      {/* Grid Pattern Overlay */}
+      <div 
+        className="absolute inset-0 pointer-events-none z-0"
+        style={{
+          backgroundImage: 'linear-gradient(rgba(255, 255, 255, 0.02) 1px, transparent 1px), linear-gradient(90deg, rgba(255, 255, 255, 0.02) 1px, transparent 1px)',
+          backgroundSize: '40px 40px',
+          maskImage: 'radial-gradient(ellipse at center, black 40%, transparent 80%)',
+          WebkitMaskImage: 'radial-gradient(ellipse at center, black 40%, transparent 80%)'
+        }}
+      />
+
+      <FadeIn delay={0} y={-20} as="nav" className="flex justify-between items-center text-[#D7E2EA] font-medium uppercase tracking-wider text-[11px] sm:text-xs md:text-sm lg:text-base px-6 md:px-10 pt-6 md:pt-8 relative z-20 w-full gap-2 sm:gap-4 md:gap-6 overflow-x-auto whitespace-nowrap hide-scrollbar">
+        <a href="#profile" className="hover:opacity-70 transition-opacity duration-200">Profile</a>
         <a href="#about" className="hover:opacity-70 transition-opacity duration-200">About</a>
         <a href="#experience" className="hover:opacity-70 transition-opacity duration-200">Experience</a>
         <a href="#projects" className="hover:opacity-70 transition-opacity duration-200">Projects</a>
         <a href="#contact" className="hover:opacity-70 transition-opacity duration-200">Contact</a>
       </FadeIn>
 
-      <div className="flex-1 flex flex-col justify-center overflow-hidden w-full">
+      <div className="flex-1 flex flex-col justify-center overflow-hidden w-full relative z-20">
         <FadeIn delay={0.15} y={40} className="w-full">
           <h1 className="hero-heading font-black uppercase tracking-tight leading-none whitespace-nowrap w-full text-[14vw] sm:text-[15vw] md:text-[16vw] lg:text-[17.5vw] mt-6 sm:mt-4 md:-mt-5 text-center">
             Hi, i&apos;m ram
