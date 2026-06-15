@@ -1,5 +1,6 @@
 import { useRef } from 'react';
 import { motion, useScroll, useTransform, MotionValue } from 'framer-motion';
+import { Link } from 'react-router-dom';
 import { LiveProjectButton } from './LiveProjectButton';
 import homeImage from '../assets/home.png';
 import smallImage1 from '../assets/s1.png';
@@ -13,6 +14,7 @@ import small2 from '../assets/ss2.png';
 
 const projects = [
   {
+    id: "shopease",
     num: "01",
     label: "Client",
     name: "Shopease",
@@ -24,6 +26,7 @@ const projects = [
     }
   },
   {
+    id: "insurance-chat",
     num: "02",
     label: "Personal",
     name: "insurance chat",
@@ -35,6 +38,7 @@ const projects = [
     }
   },
   {
+    id: "nutrivigil-advisor",
     num: "03",
     label: "Client",
     name: "nutrivigil advisor",
@@ -67,7 +71,12 @@ const ProjectCard = ({ project, index, progress, targetScale }: { project: any, 
               <span className="text-white font-medium uppercase text-[clamp(1.2rem,3vw,2.5rem)] leading-tight">{project.name}</span>
             </div>
           </div>
-          <LiveProjectButton url={project.url} />
+          <div className="flex items-center gap-4 flex-wrap">
+            <Link to={`/projects/${project.id}`} className="px-6 py-3 rounded-full border border-white/[0.2] text-[#D7E2EA] font-semibold text-sm uppercase tracking-wider hover:bg-white/[0.1] transition-colors whitespace-nowrap">
+              View Case Study
+            </Link>
+            <LiveProjectButton url={project.url} />
+          </div>
         </div>
 
         <div className="flex flex-col sm:flex-row gap-4 sm:gap-6 h-full flex-1 overflow-hidden">
