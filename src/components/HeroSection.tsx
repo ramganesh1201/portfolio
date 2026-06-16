@@ -32,31 +32,75 @@ export function HeroSection() {
         <a href="#contact" className="hover:opacity-70 transition-opacity duration-200 py-3 px-2 -mx-2">Contact</a>
       </FadeIn>
 
-      <div className="flex-1 flex flex-col justify-center overflow-hidden w-full relative z-20">
+      <div className="flex-1 flex flex-col justify-center items-center overflow-hidden w-full relative z-20">
         <FadeIn delay={0.15} y={40} className="w-full">
-          <h1 className="hero-heading font-black uppercase tracking-tight leading-none whitespace-nowrap w-full text-[14vw] sm:text-[15vw] md:text-[16vw] lg:text-[17.5vw] mt-6 sm:mt-4 md:-mt-5 text-center">
-            Hi, i&apos;m ram
+          <h1 className="hero-heading font-black uppercase tracking-tight leading-none break-words w-full text-[14vw] sm:text-[15vw] md:text-[16vw] lg:text-[17.5vw] mt-6 sm:mt-4 md:-mt-5 text-center">
+            Hi, I&apos;m Ram
           </h1>
         </FadeIn>
-        <h2 className="sr-only">
-  Vemula Ram Ganesh Frontend Developer Portfolio
-</h2>
-        <FadeIn delay={0.25} y={40} className="w-full mt-4 flex justify-center text-center px-4">
-          <p className="text-[#D7E2EA] font-medium text-[clamp(1rem,2vw,1.5rem)] tracking-widest uppercase opacity-80">
-            Frontend Developer | UI Animator | React Developer
-          </p>
+        <h2 className="sr-only">Vemula Ram Ganesh Frontend Developer Portfolio</h2>
+
+        <FadeIn delay={0.22} y={40} className="w-full mt-2 flex justify-center text-center px-4">
+          <div className="flex flex-col items-center gap-3">
+            <p className="text-[#D7E2EA] font-semibold text-[clamp(0.9rem,1.6vw,1.25rem)] tracking-widest uppercase opacity-90">
+              Frontend Developer — React · TypeScript · Tailwind CSS
+            </p>
+          </div>
         </FadeIn>
       </div>
-
       <div className="flex justify-between items-end pb-7 sm:pb-8 md:pb-10 px-6 md:px-10 relative z-20 w-full">
-        <FadeIn delay={0.35} y={20} className="max-w-[180px] sm:max-w-[260px] md:max-w-[320px]">
-          <p className="text-[#D7E2EA] font-light uppercase tracking-wide leading-snug text-[clamp(0.9rem,1.4vw,1.5rem)]">
-            I am Vemula Ram Ganesh,a Frontend Developer and B.Tech Computer Science student passionate about building modern web applications using React, TypeScript, JavaScript and Tailwind CSS.
-          </p>
-        </FadeIn>
-        <FadeIn delay={0.5} y={20}>
-          <ContactButton />
-        </FadeIn>
+        <FadeIn
+  delay={0.35}
+  y={20}
+  className="hidden md:flex flex-col gap-5"
+>
+  <div>
+    <span className="inline-flex items-center px-3 py-1 rounded-full bg-white/[0.04] border border-white/[0.06] text-sm text-[#D7E2EA] uppercase tracking-wider">
+      Open for Internships
+    </span>
+  </div>
+
+  <div className="flex items-center gap-10">
+    <div>
+      <p className="text-[#D7E2EA]/40 uppercase tracking-[0.2em] text-xs mb-2">
+        Education
+      </p>
+      <p className="text-[#D7E2EA] text-base font-medium">
+        B.Tech CSE
+      </p>
+    </div>
+
+    <div className="w-px h-10 bg-white/10" />
+
+    <div>
+      <p className="text-[#D7E2EA]/40 uppercase tracking-[0.2em] text-xs mb-2">
+        Projects
+      </p>
+      <p className="text-[#D7E2EA] text-base font-medium">
+        10+ Completed
+      </p>
+    </div>
+
+    <div className="w-px h-10 bg-white/10" />
+
+    <div>
+      <p className="text-[#D7E2EA]/40 uppercase tracking-[0.2em] text-xs mb-2">
+        Location
+      </p>
+      <p className="text-[#D7E2EA] text-base font-medium">
+        Andhra Pradesh, India
+      </p>
+    </div>
+  </div>
+</FadeIn>
+        <div className="flex items-center gap-3">
+          <FadeIn delay={0.55} y={20}>
+            <a href="/resume.pdf" target="_blank" rel="noopener noreferrer" className="px-4 py-2 rounded-full border border-white/[0.1] text-[#D7E2EA] font-semibold uppercase tracking-wider hover:bg-white/[0.03] transition-all">View Resume</a>
+          </FadeIn>
+          <FadeIn delay={0.5} y={20}>
+            <ContactButton />
+          </FadeIn>
+        </div>
       </div>
     </section>
   );

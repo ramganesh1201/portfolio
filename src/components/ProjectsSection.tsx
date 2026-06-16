@@ -2,6 +2,7 @@ import { useRef } from 'react';
 import { motion, useScroll, useTransform, MotionValue } from 'framer-motion';
 import { Link } from 'react-router-dom';
 import { LiveProjectButton } from './LiveProjectButton';
+import { caseStudies } from '../data/caseStudies';
 import homeImage from '../assets/home.png';
 import smallImage1 from '../assets/s1.png';
 import smallImage2 from '../assets/s2.png';
@@ -69,6 +70,18 @@ const ProjectCard = ({ project, index, progress, targetScale }: { project: any, 
             <div className="flex flex-col">
               <span className="text-[#D7E2EA] opacity-60 text-xs sm:text-sm uppercase tracking-widest">{project.label}</span>
               <span className="text-white font-medium uppercase text-[clamp(1.2rem,3vw,2.5rem)] leading-tight">{project.name}</span>
+              {/* Tech stack & quick features (sourced from caseStudies when available) */}
+              {(() => {
+                const study = caseStudies.find(s => s.id === project.id);
+                if (!study) return null;
+                return (
+                  <div className="mt-2 hidden sm:flex sm:flex-wrap sm:gap-2">
+                    {study.techStack.slice(0, 6).map((t) => (
+                      <span key={t} className="text-xs px-2 py-1 rounded-full bg-white/[0.03] border border-white/[0.04] text-[#D7E2EA]">{t}</span>
+                    ))}
+                  </div>
+                );
+              })()}
             </div>
           </div>
           <div className="flex items-center gap-4 flex-wrap">
@@ -86,6 +99,18 @@ const ProjectCard = ({ project, index, progress, targetScale }: { project: any, 
           </div>
           <div className="w-full sm:w-[60%] h-full shrink-0">
             <img src={project.images.col2} alt="Project image main" className="w-full h-full object-cover rounded-[30px] sm:rounded-[40px] md:rounded-[50px]" />
+            {/* Small features summary */}
+            <div className="mt-3 hidden md:block">
+              {(() => {
+                const study = caseStudies.find(s => s.id === project.id);
+                if (!study) return null;
+                return (
+                  <p className="text-sm text-[#D7E2EA]/80">
+                    {study.keyFeatures.slice(0,2).join(' • ')} • {study.techStack.slice(0,3).join(', ')}
+                  </p>
+                );
+              })()}
+            </div>
           </div>
         </div>
       </motion.div>

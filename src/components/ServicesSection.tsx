@@ -1,45 +1,114 @@
+import { FadeIn } from "./FadeIn";
 
-import { FadeIn } from './FadeIn';
-
-const services = [
+const highlights = [
   {
-    num: "2026",
-    title: "Build an automation workflow",
-    desc: "Launched a premium automation workflow website showcasing advanced UI techniques and motion design."
+    value: "10+",
+    title: "Projects Built",
+    description:
+      "Developed multiple React and TypeScript applications with responsive design and modern frontend architecture.",
   },
   {
-    num: "2025",
-    title: "Frontend Development Journey",
-    desc: "Focused on modern UI systems, responsive architecture, motion design, and performance optimization."
+    value: "React",
+    title: "Frontend Specialization",
+    description:
+      "Focused on React, TypeScript, reusable components, accessibility, and scalable UI development.",
   },
   {
-    num: "2024",
-    title: "Started B.Tech",
-    desc: "Began academic foundation in Computer Science while exploring frontend development deeply."
-  }
+    value: "95+",
+    title: "Performance Focus",
+    description:
+      "Optimized user experiences through responsive layouts, efficient rendering, and modern best practices.",
+  },
+  {
+    value: "Open",
+    title: "Availability",
+    description:
+      "Available for internships, freelance projects, and entry-level frontend development opportunities.",
+  },
 ];
 
 export function ServicesSection() {
   return (
-    <section id="experience" className="bg-white rounded-t-[40px] sm:rounded-t-[50px] md:rounded-t-[60px] px-5 sm:px-8 md:px-10 py-20 sm:py-24 md:py-32 relative z-10 w-full">
+    <section
+      id="experience"
+      className="bg-white rounded-t-[40px] sm:rounded-t-[50px] md:rounded-t-[60px] px-5 sm:px-8 md:px-10 py-20 sm:py-24 md:py-32 relative z-10 w-full"
+    >
       <FadeIn delay={0} y={30}>
-        <h2 className="text-[#0C0C0C] font-black uppercase text-center text-[clamp(2.5rem,10vw,140px)] mb-16 sm:mb-20 md:mb-28 leading-none tracking-tight">
-          Experience
-        </h2>
+        <div className="max-w-7xl mx-auto text-center mb-16 md:mb-24">
+          <h2 className="text-[#0C0C0C] font-black uppercase text-[clamp(2.5rem,8vw,7rem)] tracking-tight leading-none">
+            Professional Highlights
+          </h2>
+
+          <p className="mt-6 text-[#0C0C0C]/60 max-w-2xl mx-auto text-base md:text-lg">
+            Building modern, high-performance web experiences with a strong
+            focus on usability, scalability, and clean frontend architecture.
+          </p>
+        </div>
       </FadeIn>
-      
-      <div className="max-w-5xl mx-auto flex flex-col">
-        {services.map((s, i) => (
-          <FadeIn key={i} delay={i * 0.1} y={20} className="flex flex-col md:flex-row items-start md:items-center py-8 sm:py-10 md:py-12 border-b-[1px] border-[rgba(12,12,12,0.15)] last:border-b-0 gap-6 md:gap-12 lg:gap-20">
-            <div className="text-[#0C0C0C] font-black text-[clamp(2rem,6vw,90px)] leading-none md:w-[240px] lg:w-[340px] shrink-0 tracking-tighter">
-              {s.num}
-            </div>
-            <div className="flex flex-col gap-2 sm:gap-3">
-              <h3 className="font-medium uppercase text-[clamp(1.1rem,1.8vw,1.8rem)] text-[#0C0C0C]">
-                {s.title}
+
+      <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8">
+        {highlights.map((item, index) => (
+          <FadeIn key={index} delay={index * 0.1} y={20}>
+            <div
+              className="
+                group
+                h-full
+                rounded-[28px]
+                border
+                border-black/10
+                bg-gradient-to-br
+                from-white
+                to-gray-50
+                p-8
+                md:p-10
+                transition-all
+                duration-500
+                hover:-translate-y-2
+                hover:shadow-[0_20px_60px_rgba(0,0,0,0.12)]
+              "
+            >
+              <div className="mb-6">
+                <span
+                  className="
+                    inline-flex
+                    items-center
+                    justify-center
+                    rounded-full
+                    bg-black
+                    text-white
+                    px-5
+                    py-2
+                    text-sm
+                    font-medium
+                    tracking-wide
+                  "
+                >
+                  {item.value}
+                </span>
+              </div>
+
+              <h3
+                className="
+                  text-[#0C0C0C]
+                  text-2xl
+                  md:text-3xl
+                  font-bold
+                  mb-4
+                  tracking-tight
+                "
+              >
+                {item.title}
               </h3>
-              <p className="font-light leading-relaxed max-w-2xl text-[clamp(0.85rem,1.6vw,1.25rem)] text-[#0C0C0C] opacity-60">
-                {s.desc}
+
+              <p
+                className="
+                  text-[#0C0C0C]/65
+                  leading-relaxed
+                  text-base
+                  md:text-lg
+                "
+              >
+                {item.description}
               </p>
             </div>
           </FadeIn>
