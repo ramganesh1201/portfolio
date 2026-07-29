@@ -1,4 +1,4 @@
-# 💼 Developer Portfolio
+#  Portfolio
 
 [![Live Demo](https://img.shields.io/badge/Live_Demo-portfolio--lime--gamma--49.vercel.app-000000?style=for-the-badge&logo=vercel&logoColor=white)](https://portfolio-lime-gamma-49.vercel.app)
 [![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
