@@ -12,6 +12,12 @@ import smallImage222 from '../assets/sss2.png';
 import h1 from '../assets/h1.png';
 import small from '../assets/ss1.png';
 import small2 from '../assets/ss2.png';
+import len from '../assets/l1.png';
+import len2 from '../assets/l2.png';
+import len3 from '../assets/l3.png';
+import sy1 from '../assets/sy1.png';
+import sy2 from '../assets/sy2.png';
+import sy3 from '../assets/sy3.png';
 
 const projects = [
   {
@@ -48,6 +54,30 @@ const projects = [
       col1_1: smallImage111,
       col1_2: smallImage222,
       col2: homeImage1
+    }
+  },
+  {
+    id: "Lenoraa",
+    num: "04",
+    label: "Client",
+    name: "Lenoraa",
+    url: "https://leno-raa-zeta.vercel.app/",
+    images: {
+      col1_1: len2,
+      col1_2: len3,
+      col2: len
+    }
+  },
+  {
+    id: "syncrole",
+    num: "05",
+    label: "personal",
+    name: "syncrole",
+    url: "https://syncrole.vercel.app/",
+    images: {
+      col1_1: sy2,
+      col1_2: sy3,
+      col2: sy1
     }
   }
 ];
