@@ -245,7 +245,7 @@ export function ContactSection() {
                   </span>
                 </a>
                 <a
-                  href="#"
+                  href="https://www.instagram.com/ramganesh_vemula?igsh=MTk0NnM0aXlhMW8w"
                   className="group relative text-white/90 hover:text-white transition-colors font-medium"
                 >
                   <span className="block">Instagram</span>
@@ -254,16 +254,7 @@ export function ContactSection() {
                     ↗
                   </span>
                 </a>
-                <a
-                  href="#"
-                  className="group relative text-white/90 hover:text-white transition-colors font-medium"
-                >
-                  <span className="block">Twitter</span>
-                  <span className="absolute left-0 -bottom-1 h-[2px] w-0 bg-[#BE4C00] group-hover:w-full transition-[width] duration-300" />
-                  <span aria-hidden className="absolute -right-4 top-0 opacity-0 group-hover:opacity-100 transition-opacity text-[#BE4C00]">
-                    ↗
-                  </span>
-                </a>
+            
               </div>
             </div>
           </div>
