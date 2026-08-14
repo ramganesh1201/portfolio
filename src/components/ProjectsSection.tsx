@@ -16,8 +16,8 @@ import len from '../assets/l1.png';
 import len2 from '../assets/l2.png';
 import len3 from '../assets/l3.png';
 import sy1 from '../assets/sy1.png';
-import sy2 from '../assets/sy2.png';
-import sy3 from '../assets/sy3.png';
+import sy2 from '../assets/ss22.png';
+import ss12 from '../assets/ss33.png';
 
 const projects = [
   {
@@ -76,7 +76,7 @@ const projects = [
     url: "https://syncrole.vercel.app/",
     images: {
       col1_1: sy2,
-      col1_2: sy3,
+      col1_2: ss12,
       col2: sy1
     }
   }

@@ -93,7 +93,7 @@ export function ProfessionalProfileSection() {
               <div className="bg-white/[0.02] border border-white/[0.05] rounded-3xl p-8 backdrop-blur-md shadow-2xl flex flex-col sm:flex-row gap-4 items-center">
                 <a 
                   href="/resume.pdf" 
-                  download
+                  download="Vemula-Ram-Ganesh-Resume.pdf"
                   className="w-full sm:w-auto flex-1 flex items-center justify-center gap-2 bg-[#D7E2EA] text-[#0C0C0C] px-6 py-4 rounded-full font-semibold uppercase tracking-wider hover:bg-white hover:scale-[1.02] active:scale-[0.98] transition-all duration-200"
                   aria-label="Download Resume"
                 >
