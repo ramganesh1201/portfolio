@@ -6,7 +6,7 @@
 [![Vite](https://img.shields.io/badge/Vite-646CFF?style=for-the-badge&logo=vite&logoColor=white)](https://vitejs.dev/)
 [![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)](https://tailwindcss.com/)
 
-An engineered, performance-optimized architectural developer portfolio featuring clean component structures, fully responsive layouts, and modern semantic styling.
+An engineered, product-focused portfolio showcasing full-stack web applications, AI integrations, and responsive digital products.
 
 ---
 
@@ -28,10 +28,9 @@ Check out the live deployed portfolio here:
 
 ## 🛠️ Tech Stack
 
-* **Frontend:** React, TypeScript
-* **Build Tool:** Vite
-* **Styling:** Tailwind CSS, PostCSS
-* **Deployment:** Vercel
+* **Frontend:** React, TypeScript, Tailwind CSS, TanStack
+* **Backend & Database:** Node.js, Express, Supabase
+* **Build & Deployment:** Vite, Vercel
 
 ---
 

@@ -38,12 +38,12 @@ export function HeroSection() {
             Hi, I&apos;m Ram
           </h1>
         </FadeIn>
-        <h2 className="sr-only">Vemula Ram Ganesh Frontend Developer Portfolio</h2>
+        <h2 className="sr-only">Vemula Ram Ganesh — Digital Product Builder</h2>
 
         <FadeIn delay={0.22} y={40} className="w-full mt-2 flex justify-center text-center px-4">
           <div className="flex flex-col items-center gap-3">
             <p className="text-[#D7E2EA] font-semibold text-[clamp(0.9rem,1.6vw,1.25rem)] tracking-widest uppercase opacity-90">
-              Frontend Developer — React · TypeScript · Tailwind CSS
+              Digital Product Builder — Full-Stack · Frontend · AI Products
             </p>
           </div>
         </FadeIn>

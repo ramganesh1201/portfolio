@@ -34,11 +34,11 @@ export function AboutSection() {
         <div className="mt-10 sm:mt-14 md:mt-16 flex flex-col items-center w-full px-4">
           <FadeIn delay={0.1} y={20}>
              <p className="text-[#D7E2EA] text-center font-bold uppercase tracking-widest text-sm md:text-xl mb-6 max-w-2xl">
-               I design and build immersive, performance-focused web experiences.
+               I build ideas into digital products.
              </p>
           </FadeIn>
           <AnimatedText 
-            text="I'm a 3rd Year B.Tech student focused on frontend architecture, motion design, and interactive UI systems. I combine clean engineering with refined visual execution."
+            text="I'm a 3rd Year B.Tech Computer Science student who enjoys taking an idea from a rough concept to a working product. I work across the stack — building responsive interfaces, connecting APIs and databases, integrating AI capabilities, and handling the engineering details that turn a prototype into something usable."
             className="text-[#D7E2EA] font-medium text-center leading-relaxed max-w-[660px] text-[clamp(1.125rem,2vw,1.35rem)]"
           />
           

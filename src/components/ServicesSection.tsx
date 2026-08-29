@@ -2,28 +2,28 @@ import { FadeIn } from "./FadeIn";
 
 const highlights = [
   {
-    value: "10+",
-    title: "Projects Built",
+    value: "Build",
+    title: "Build Products",
     description:
-      "Developed multiple React and TypeScript applications with responsive design and modern frontend architecture.",
+      "Turning concepts into functional, responsive web applications built for real-world usage.",
   },
   {
-    value: "React",
-    title: "Frontend Specialization",
+    value: "Engineer",
+    title: "Engineer Experiences",
     description:
-      "Focused on React, TypeScript, reusable components, accessibility, and scalable UI development.",
+      "Crafting polished, accessible interfaces backed by state management and clean application architecture.",
   },
   {
-    value: "95+",
-    title: "Performance Focus",
+    value: "Connect",
+    title: "Connect Systems",
     description:
-      "Optimized user experiences through responsive layouts, efficient rendering, and modern best practices.",
+      "Integrating backend APIs, authentication, databases, and third-party services end-to-end.",
   },
   {
-    value: "Open",
-    title: "Availability",
+    value: "Intelligence",
+    title: "Add Intelligence",
     description:
-      "Available for internships, freelance projects, and entry-level frontend development opportunities.",
+      "Integrating AI capabilities to solve concrete user problems and deliver smart product features.",
   },
 ];
 
@@ -40,8 +40,7 @@ export function ServicesSection() {
           </h2>
 
           <p className="mt-6 text-[#0C0C0C]/60 max-w-2xl mx-auto text-base md:text-lg">
-            Building modern, high-performance web experiences with a strong
-            focus on usability, scalability, and clean frontend architecture.
+            Bringing ideas to life through product thinking, clean frontend engineering, robust backend logic, and AI integrations.
           </p>
         </div>
       </FadeIn>

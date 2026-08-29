@@ -3,7 +3,7 @@ import { Download, ExternalLink } from 'lucide-react';
 
 const technologies = [
   'React', 'TypeScript', 'JavaScript', 'Tailwind CSS',
-  'HTML5', 'CSS3', 'Node.js', 'Supabase', 'Git', 'GitHub', 'Vercel'
+  'Node.js', 'Express', 'Supabase', 'TanStack', 'Git', 'GitHub', 'Vercel'
 ];
 
 export function ProfessionalProfileSection() {
@@ -18,7 +18,7 @@ export function ProfessionalProfileSection() {
         
         <FadeIn delay={0.1} y={20}>
           <p className="text-[#D7E2EA]/70 text-lg md:text-xl font-medium tracking-wide uppercase max-w-2xl mb-12">
-            Frontend Developer focused on building modern, responsive, and high-performance web experiences.
+            Digital Product Builder focused on turning ideas into full-stack web applications and high-performance digital experiences.
           </p>
         </FadeIn>
 
@@ -37,7 +37,7 @@ export function ProfessionalProfileSection() {
                 
                 <div>
                   <h3 className="text-sm text-[#D7E2EA]/50 uppercase tracking-widest mb-1">Role</h3>
-                  <p className="text-xl md:text-2xl font-semibold text-[#D7E2EA]">Frontend Developer</p>
+                  <p className="text-xl md:text-2xl font-semibold text-[#D7E2EA]">Digital Product Builder</p>
                 </div>
 
                 <div>
@@ -48,14 +48,14 @@ export function ProfessionalProfileSection() {
 
                 <div>
                   <h3 className="text-sm text-[#D7E2EA]/50 uppercase tracking-widest mb-1">Specialization</h3>
-                  <p className="text-lg md:text-xl text-[#D7E2EA]">React • TypeScript • Tailwind CSS</p>
+                  <p className="text-lg md:text-xl text-[#D7E2EA]">Full-Stack • Frontend • AI Products</p>
                 </div>
               </div>
               
               <div className="mt-8 pt-8 border-t border-white/[0.05] grid grid-cols-1 sm:grid-cols-2 gap-6 relative z-10">
                  <div>
                    <h3 className="text-sm text-[#D7E2EA]/50 uppercase tracking-widest mb-1">Availability</h3>
-                   <p className="text-[#D7E2EA] font-medium leading-snug">Open for Internships & Freelance Opportunities</p>
+                   <p className="text-[#D7E2EA] font-medium leading-snug">Open for Software Engineer, SDE, Full-Stack & Frontend Developer roles</p>
                  </div>
                  <div>
                    <h3 className="text-sm text-[#D7E2EA]/50 uppercase tracking-widest mb-1">Projects Built</h3>
