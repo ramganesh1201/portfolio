@@ -61,7 +61,7 @@ export function ContactSection() {
   return (
     <section
       id="contact"
-      className="bg-[#0C0C0C] rounded-t-[40px] sm:rounded-t-[50px] md:rounded-t-[60px] px-4 sm:px-8 md:px-10 py-16 sm:py-24 md:py-32 relative z-10 w-full"
+      className="bg-[#0C0C0C] rounded-t-[40px] sm:rounded-t-[50px] md:rounded-t-[60px] px-5 sm:px-8 md:px-10 py-20 sm:py-24 md:py-32 relative z-10 w-full"
     >
       <div aria-hidden className="pointer-events-none absolute inset-0 overflow-hidden">
         <div className="absolute -top-32 left-1/2 -translate-x-1/2 h-[420px] w-[420px] rounded-full bg-[radial-gradient(circle_at_center,rgba(190,76,0,0.22)_0%,rgba(190,76,0,0)_62%)]" />
@@ -73,7 +73,7 @@ export function ContactSection() {
         {/* SECTION 1 */}
         <div>
           <FadeIn delay={0} y={20}>
-            <h2 className="text-center font-black uppercase tracking-tight text-white text-[clamp(2rem,5.6vw,4.4rem)] leading-[1.02]">
+            <h2 className="text-center font-black uppercase tracking-tight text-white text-[clamp(2.4rem,5.6vw,4.4rem)] leading-[1.02]">
               LET&apos;S BUILD SOMETHING AMAZING
             </h2>
           </FadeIn>
@@ -110,8 +110,8 @@ export function ContactSection() {
                 <div>
                   <div className="text-[#BE4C00] uppercase tracking-widest text-xs font-semibold">Email</div>
                   <a
-                    href="mailto:ramvemula334@email.com"
-                    className="mt-2 inline-flex items-center gap-2 text-[#D7E2EA] hover:text-white transition-colors font-medium break-all sm:break-normal"
+                    href="mailto:your@email.com"
+                    className="mt-2 inline-flex items-center gap-2 text-[#D7E2EA] hover:text-white transition-colors font-medium"
                   >
                     ramvemula334@email.com
                     <span aria-hidden className="text-[#BE4C00]">↗</span>

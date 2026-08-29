@@ -114,8 +114,8 @@ const ProjectCard = ({ project, index, progress, targetScale }: { project: any, 
               })()}
             </div>
           </div>
-          <div className="flex items-center gap-2 sm:gap-4 flex-wrap">
-            <Link to={`/projects/${project.id}`} className="px-4 sm:px-6 py-2.5 sm:py-3 rounded-full border border-white/[0.2] text-[#D7E2EA] font-semibold text-xs sm:text-sm uppercase tracking-wider hover:bg-white/[0.1] transition-colors whitespace-nowrap inline-flex items-center justify-center min-h-[44px]">
+          <div className="flex items-center gap-4 flex-wrap">
+            <Link to={`/projects/${project.id}`} className="px-6 py-3 rounded-full border border-white/[0.2] text-[#D7E2EA] font-semibold text-sm uppercase tracking-wider hover:bg-white/[0.1] transition-colors whitespace-nowrap">
               View Case Study
             </Link>
             <LiveProjectButton url={project.url} />
@@ -123,12 +123,12 @@ const ProjectCard = ({ project, index, progress, targetScale }: { project: any, 
         </div>
 
         <div className="flex flex-col sm:flex-row gap-4 sm:gap-6 h-full flex-1 overflow-hidden">
-          <div className="hidden sm:flex flex-col gap-4 sm:gap-6 w-full sm:w-[40%] h-full shrink-0">
+          <div className="flex flex-col gap-4 sm:gap-6 w-full sm:w-[40%] h-full shrink-0">
             <img src={project.images.col1_1} alt="Project image" className="w-full object-cover rounded-[30px] sm:rounded-[40px] md:rounded-[50px]" style={{ height: 'clamp(130px, 16vw, 230px)' }} />
             <img src={project.images.col1_2} alt="Project image" className="w-full object-cover rounded-[30px] sm:rounded-[40px] md:rounded-[50px] flex-1 min-h-0" />
           </div>
           <div className="w-full sm:w-[60%] h-full shrink-0">
-            <img src={project.images.col2} alt="Project image main" className="w-full h-full object-cover rounded-[24px] sm:rounded-[40px] md:rounded-[50px]" />
+            <img src={project.images.col2} alt="Project image main" className="w-full h-full object-cover rounded-[30px] sm:rounded-[40px] md:rounded-[50px]" />
             {/* Small features summary */}
             <div className="mt-3 hidden md:block">
               {(() => {
