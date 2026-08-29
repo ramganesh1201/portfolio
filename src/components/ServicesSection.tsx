@@ -31,7 +31,7 @@ export function ServicesSection() {
   return (
     <section
       id="experience"
-      className="bg-white rounded-t-[40px] sm:rounded-t-[50px] md:rounded-t-[60px] px-5 sm:px-8 md:px-10 py-20 sm:py-24 md:py-32 relative z-10 w-full"
+      className="bg-white rounded-t-[40px] sm:rounded-t-[50px] md:rounded-t-[60px] px-4 sm:px-8 md:px-10 py-16 sm:py-24 md:py-32 relative z-10 w-full"
     >
       <FadeIn delay={0} y={30}>
         <div className="max-w-7xl mx-auto text-center mb-16 md:mb-24">
@@ -58,7 +58,8 @@ export function ServicesSection() {
                 bg-gradient-to-br
                 from-white
                 to-gray-50
-                p-8
+                p-6
+                sm:p-8
                 md:p-10
                 transition-all
                 duration-500

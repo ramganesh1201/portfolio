@@ -8,7 +8,7 @@ const enhance = ['AI Integrations', 'Cloudflare Workers'];
 
 export function TechStackSection() {
   return (
-    <section id="tech" className="w-full px-6 py-20 md:px-10 lg:py-32 relative z-10 flex flex-col items-center">
+    <section id="tech" className="w-full px-4 sm:px-6 py-16 sm:py-20 md:px-10 lg:py-32 relative z-10 flex flex-col items-center">
       <div className="max-w-6xl w-full">
         <FadeIn y={20}>
           <h2 className="text-[#D7E2EA] font-black uppercase tracking-tight text-4xl sm:text-5xl md:text-6xl lg:text-7xl mb-6">
@@ -17,12 +17,12 @@ export function TechStackSection() {
         </FadeIn>
 
         <FadeIn delay={0.1} y={20}>
-          <p className="text-[#D7E2EA]/70 text-lg md:text-xl font-medium tracking-wide uppercase max-w-2xl mb-12">
+          <p className="text-[#D7E2EA]/70 text-lg md:text-xl font-medium tracking-wide uppercase max-w-2xl mb-8 sm:mb-12">
             Technologies I use to build, connect, store, ship, and enhance digital products.
           </p>
         </FadeIn>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-4 sm:gap-6">
           <FadeIn delay={0.2} y={20} className="space-y-3">
             <h3 className="text-sm text-[#D7E2EA]/50 uppercase tracking-widest">Build</h3>
             <div className="flex flex-wrap gap-2">

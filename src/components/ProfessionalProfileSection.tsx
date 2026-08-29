@@ -8,7 +8,7 @@ const technologies = [
 
 export function ProfessionalProfileSection() {
   return (
-    <section id="profile" className="w-full px-6 py-20 md:px-10 lg:py-32 relative z-10 flex flex-col items-center">
+    <section id="profile" className="w-full px-4 sm:px-6 py-16 sm:py-20 md:px-10 lg:py-32 relative z-10 flex flex-col items-center">
       <div className="max-w-6xl w-full">
         <FadeIn y={20}>
           <h2 className="text-[#D7E2EA] font-black uppercase tracking-tight text-4xl sm:text-5xl md:text-6xl lg:text-7xl mb-4">
@@ -17,15 +17,15 @@ export function ProfessionalProfileSection() {
         </FadeIn>
         
         <FadeIn delay={0.1} y={20}>
-          <p className="text-[#D7E2EA]/70 text-lg md:text-xl font-medium tracking-wide uppercase max-w-2xl mb-12">
+          <p className="text-[#D7E2EA]/70 text-lg md:text-xl font-medium tracking-wide uppercase max-w-2xl mb-8 sm:mb-12">
             Digital Product Builder focused on turning ideas into full-stack web applications and high-performance digital experiences.
           </p>
         </FadeIn>
 
-        <div className="flex flex-col lg:flex-row gap-8 w-full">
+        <div className="flex flex-col lg:flex-row gap-6 sm:gap-8 w-full">
           {/* Profile Info Card */}
           <FadeIn delay={0.2} y={20} className="flex-1">
-            <div className="bg-white/[0.02] border border-white/[0.05] rounded-3xl p-8 backdrop-blur-md shadow-2xl hover:bg-white/[0.03] transition-colors duration-500 h-full flex flex-col justify-between group relative overflow-hidden">
+            <div className="bg-white/[0.02] border border-white/[0.05] rounded-3xl p-5 sm:p-8 backdrop-blur-md shadow-2xl hover:bg-white/[0.03] transition-colors duration-500 h-full flex flex-col justify-between group relative overflow-hidden">
               {/* Subtle glow effect on hover */}
               <div className="absolute inset-0 bg-gradient-to-br from-white/[0.05] to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-700 pointer-events-none" />
               
@@ -66,19 +66,19 @@ export function ProfessionalProfileSection() {
           </FadeIn>
 
           {/* Tech & Resume Actions Card */}
-          <div className="flex-1 flex flex-col gap-8">
+          <div className="flex-1 flex flex-col gap-6 sm:gap-8">
             <FadeIn delay={0.3} y={20} className="flex-1">
-              <div className="bg-white/[0.02] border border-white/[0.05] rounded-3xl p-8 backdrop-blur-md shadow-2xl hover:bg-white/[0.03] transition-colors duration-500 h-full relative overflow-hidden group">
+              <div className="bg-white/[0.02] border border-white/[0.05] rounded-3xl p-5 sm:p-8 backdrop-blur-md shadow-2xl hover:bg-white/[0.03] transition-colors duration-500 h-full relative overflow-hidden group">
                  {/* Subtle glow effect on hover */}
                 <div className="absolute inset-0 bg-gradient-to-bl from-white/[0.05] to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-700 pointer-events-none" />
                 
                 <div className="relative z-10">
                   <h3 className="text-sm text-[#D7E2EA]/50 uppercase tracking-widest mb-6">Tech Highlights</h3>
-                  <div className="flex flex-wrap gap-3">
+                  <div className="flex flex-wrap gap-2.5 sm:gap-3">
                     {technologies.map((tech, index) => (
                       <div 
                         key={tech} 
-                        className="px-4 py-2 rounded-full bg-white/[0.03] border border-white/[0.05] text-[#D7E2EA]/90 text-sm font-medium hover:bg-white/[0.1] hover:-translate-y-1 hover:text-white hover:border-white/[0.2] transition-all duration-300 cursor-default"
+                        className="px-3.5 sm:px-4 py-1.5 sm:py-2 rounded-full bg-white/[0.03] border border-white/[0.05] text-[#D7E2EA]/90 text-xs sm:text-sm font-medium hover:bg-white/[0.1] hover:-translate-y-1 hover:text-white hover:border-white/[0.2] transition-all duration-300 cursor-default"
                         style={{ transitionDelay: `${index * 15}ms` }}
                       >
                         {tech}
@@ -90,11 +90,11 @@ export function ProfessionalProfileSection() {
             </FadeIn>
 
             <FadeIn delay={0.4} y={20}>
-              <div className="bg-white/[0.02] border border-white/[0.05] rounded-3xl p-8 backdrop-blur-md shadow-2xl flex flex-col sm:flex-row gap-4 items-center">
+              <div className="bg-white/[0.02] border border-white/[0.05] rounded-3xl p-5 sm:p-8 backdrop-blur-md shadow-2xl flex flex-col sm:flex-row gap-4 items-center">
                 <a 
                   href="/resume.pdf" 
                   download="Vemula-Ram-Ganesh-Resume.pdf"
-                  className="w-full sm:w-auto flex-1 flex items-center justify-center gap-2 bg-[#D7E2EA] text-[#0C0C0C] px-6 py-4 rounded-full font-semibold uppercase tracking-wider hover:bg-white hover:scale-[1.02] active:scale-[0.98] transition-all duration-200"
+                  className="w-full sm:w-auto flex-1 flex items-center justify-center gap-2 bg-[#D7E2EA] text-[#0C0C0C] px-4 sm:px-6 py-3.5 sm:py-4 rounded-full font-semibold text-xs sm:text-sm uppercase tracking-wider hover:bg-white hover:scale-[1.02] active:scale-[0.98] transition-all duration-200 min-h-[44px]"
                   aria-label="Download Resume"
                 >
                   <Download className="w-5 h-5" />
@@ -104,7 +104,7 @@ export function ProfessionalProfileSection() {
                   href="/resume.pdf" 
                   target="_blank" 
                   rel="noopener noreferrer"
-                  className="w-full sm:w-auto flex-1 flex items-center justify-center gap-2 bg-transparent border border-white/[0.1] text-[#D7E2EA] px-6 py-4 rounded-full font-semibold uppercase tracking-wider hover:bg-white/[0.05] hover:border-white/[0.2] hover:scale-[1.02] active:scale-[0.98] transition-all duration-200"
+                  className="w-full sm:w-auto flex-1 flex items-center justify-center gap-2 bg-transparent border border-white/[0.1] text-[#D7E2EA] px-4 sm:px-6 py-3.5 sm:py-4 rounded-full font-semibold text-xs sm:text-sm uppercase tracking-wider hover:bg-white/[0.05] hover:border-white/[0.2] hover:scale-[1.02] active:scale-[0.98] transition-all duration-200 min-h-[44px]"
                   aria-label="View Resume in new tab"
                 >
                   <ExternalLink className="w-5 h-5" />
