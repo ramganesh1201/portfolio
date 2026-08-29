@@ -38,14 +38,14 @@ export function AboutSection() {
              </p>
           </FadeIn>
           <AnimatedText 
-            text="I'm a 2nd Year B.Tech student focused on frontend architecture, motion design, and interactive UI systems. I combine clean engineering with refined visual execution."
+            text="I'm a 3rd Year B.Tech student focused on frontend architecture, motion design, and interactive UI systems. I combine clean engineering with refined visual execution."
             className="text-[#D7E2EA] font-medium text-center leading-relaxed max-w-[660px] text-[clamp(1.125rem,2vw,1.35rem)]"
           />
           
           <FadeIn delay={0.2} y={20} className="w-full mt-12 md:mt-16 border-t border-[rgba(215,226,234,0.1)] pt-10">
             <div className="flex flex-wrap justify-center gap-10 md:gap-20">
               <div className="flex flex-col items-center">
-                <span className="text-4xl md:text-6xl font-black text-white">2+</span>
+                <span className="text-4xl md:text-6xl font-black text-white">3+</span>
                 <span className="text-[#D7E2EA] uppercase text-xs md:text-sm tracking-widest mt-2 opacity-70">Years Learning</span>
               </div>
               <div className="flex flex-col items-center">
